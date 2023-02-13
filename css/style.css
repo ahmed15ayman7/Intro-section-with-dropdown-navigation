@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+*{
+    border: none !important;
+    outline: none !important;
+
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+p{
+    font-size: 18px;
+    color: var(--Medium-Gray);
+}
+.nav-link{
+    color: var(--Medium-Gray) !important;
+}
+.nav-link:hover{
+    color: var(--Almost-Black) !important;
+}
+.navbar-brand{
+    color: var(--Almost-Black) !important;
+    
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.btn-r{
+    margin-left: 10px;
+    border: 1px solid var(--Medium-Gray) !important;
+    border-radius: 10px !important;
+    
+}
+.btn-le{
+    border: 1px solid var(--Almost-Black) !important;
+    border-radius: 10px !important;
+    background-color: var(--Almost-Black) !important;
+    color: var(--Almost-White) !important;
+}
+.btn-r:hover,.btn-le:hover{
+    border-color: var(--Almost-Black) !important;
+    background-color: var(--Almost-White) !important;
+    color: var(--Almost-Black) !important;
+}
+
+
+.img-home img{
+    
+    height: 100% !important;
+    width: 100% !important;
+    background-size: 100% 100% !important;
+    background: var(--Almost-White) url(../images/image-hero-desktop.png) no-repeat;
+}
+.details-home h1{
+    font-size: 108px;
+    font-weight: bold;
+
+}
+
+@media ((min-width: 375px) and (max-width: 1024px)){
+    .img-home{
+        height: 60vh;
+        
+    }
+}
+@media (max-width: 375px) {
+    .details-home{
+        text-align: center;
+    }
+    .navbar-nav:first-child{
+        position: absolute;
+        background-color: var(--Almost-White);
+        height: 100vh;
+        width: 50%;
+        right: 0;
+        z-index: 3;
+        padding: 5px;
+    }
+    .navbar-nav:last-child{
+        position: absolute;
+        background-color: var(--Almost-White);
+        height: 20vh;
+        width: 50%;
+        right: 0;
+        top: 500%;
+        z-index: 4;
+        padding: 5px;
+    }
+
+    
+    .navbar-nav .nav-item{
+        position: relative;
+    }
+    .img-home{
+        height: 40vh;
+        
+    }
+    .img-home img{
+        transform: scale(1.08);
+        background: var(--Almost-White) url(../images/image-hero-mobile.png) no-repeat;
+    }
+    .details-home h1{
+        font-size: 30px;
+    
+    }
+    .details-home span img{
+        width: 20%;
+    }
+    
+
+}
